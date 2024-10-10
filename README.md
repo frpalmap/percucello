@@ -87,8 +87,8 @@ percucello-website/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/percucello-website.git
-   cd percucello-website
+   git clone https://github.com/frpalmap/percucello.git
+   cd percucello
    ```
 
 2. Install frontend dependencies:
@@ -148,4 +148,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 Jesús Vasquez (Percucello) - [contact@percucello.com](mailto:contact@percucello.com)
 Fidel Palma (Palmaf) - [webmaster@percucello.com](mailto:webmaster@percucello.com)
 
-Project Link: [https://github.com/username/percucello-website](https://github.com/username/percucello-website)
+Project Link: [https://github.com/frpalmap/percucello](https://github.com/username/percucello)
