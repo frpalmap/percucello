@@ -40,7 +40,7 @@ The Percucello Website is a custom-built platform for Jesús Vasquez, profession
 ## Project Structure
 
 ```
-percucello-website/
+percucello/
 │
 ├── src/                    # React application source files
 │   ├── components/         # Reusable React components
