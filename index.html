@@ -1,20 +1,341 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Percucello</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Percucello · Jesús Vásquez — Cellista · Director · Gestor cultural</title>
+<meta name="description" content="Jesús 'Percucello' Vásquez — cellista, director musical y gestor cultural. El joropo hecho cello, historias que viajan a través de la música." />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi proyecto musical</h1>
-    </header>
-    <main>
-        <p>Percucello es un proyecto que nace en Barquisimeto, en el año 2010 por Jesús Vásquez (Percucello), cellista, director orquestal y gestor cultural.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 @percucello y @palmaf</p>
-    </footer>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="index.html"><span class="dot"></span>Percucello</a>
+    <button class="nav__burger" aria-label="Menú"><span></span><span></span><span></span></button>
+    <nav class="nav__links">
+      <a href="#facetas" data-es="Facetas" data-en="Facets">Facetas</a>
+      <a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a>
+      <a href="#bio" data-es="Biografía" data-en="Biography">Biografía</a>
+      <a href="#agenda" data-es="Agenda" data-en="Dates">Agenda</a>
+      <a href="#booking" data-es="Contratación" data-en="Booking">Contratación</a>
+      <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+      <span class="lang" role="group" aria-label="Idioma">
+        <button data-lang="es" class="is-active">ES</button>
+        <button data-lang="en">EN</button>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero__in">
+    <div class="hero__text">
+      <span class="kicker" data-es="Cellista · Director musical · Gestor cultural" data-en="Cellist · Music director · Cultural manager">Cellista · Director musical · Gestor cultural</span>
+      <h1 class="hero__name">PERCU<span>CELLO</span></h1>
+      <p class="hero__person">Jesús Vásquez</p>
+      <p class="hero__tag serif-quote" data-es="«El joropo hecho cello. Historias que viajan a través de la música.»" data-en="“Joropo turned into cello. Stories that travel through music.”">«El joropo hecho cello. Historias que viajan a través de la música.»</p>
+      <div class="hero__cta">
+        <a href="#proyectos" class="btn btn--clay" data-es="Ver proyectos" data-en="See projects">Ver proyectos</a>
+        <a href="#booking" class="btn btn--ghost" data-es="Contratar" data-en="Book a show">Contratar</a>
+      </div>
+      <div class="hero__social">
+        <a href="https://instagram.com/percucello" target="_blank" rel="noopener">@percucello</a>
+        <a href="https://instagram.com/percuchelo" target="_blank" rel="noopener">@percuchelo</a>
+        <a href="https://youtube.com/@percucello" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <div class="hero__media">
+      <div class="hero__frame">
+        <img src="assets/percucello-art.webp" alt="Ilustración de Jesús Percucello Vásquez tocando el violonchelo" />
+        <span class="hero__badge">est. 2010 · Barquisimeto, VE</span>
+      </div>
+      <div class="hero__blob" aria-hidden="true"></div>
+    </div>
+  </div>
+  <div class="band-pattern" aria-hidden="true"></div>
+</section>
+
+<!-- ============ FACETAS ============ -->
+<section id="facetas" class="section-pad">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker" data-es="Tres facetas, una voz" data-en="Three facets, one voice">Tres facetas, una voz</span>
+      <h2 class="sec-title" data-es="Una vida dedicada al sonido" data-en="A life devoted to sound">Una vida dedicada al sonido</h2>
+    </div>
+    <div class="facetas">
+      <article class="card facet reveal" style="--accent:var(--clay)">
+        <span class="facet__num">01</span>
+        <h3 data-es="Cellista" data-en="Cellist">Cellista</h3>
+        <p data-es="Especialista en música venezolana. Ha desarrollado un estilo muy personal marcado por la música popular y el joropo, que ha llevado por toda Latinoamérica y ahora por Europa." data-en="A specialist in Venezuelan music. He has developed a deeply personal style shaped by popular music and joropo, which he has taken across Latin America and now through Europe.">Especialista en música venezolana. Ha desarrollado un estilo muy personal marcado por la música popular y el joropo, que ha llevado por toda Latinoamérica y ahora por Europa.</p>
+      </article>
+      <article class="card facet reveal" style="--accent:var(--petrol)">
+        <span class="facet__num">02</span>
+        <h3 data-es="Director musical" data-en="Music director">Director musical</h3>
+        <p data-es="Graduado en la UCLA de Barquisimeto. Fundó la Orquesta Experimental de Rock, donde cruza la formación académica con la energía de lo alternativo." data-en="A graduate of UCLA Barquisimeto. He founded the Experimental Rock Orchestra, where academic training meets the energy of the alternative.">Graduado en la UCLA de Barquisimeto. Fundó la Orquesta Experimental de Rock, donde cruza la formación académica con la energía de lo alternativo.</p>
+      </article>
+      <article class="card facet reveal" style="--accent:var(--wine)">
+        <span class="facet__num">03</span>
+        <h3 data-es="Gestor cultural" data-en="Cultural manager">Gestor cultural</h3>
+        <p data-es="Fundó el Centro Cultural Canuto: clases de música y danza, eventos de poesía, intercambio de idiomas y un punto de encuentro para la comunidad." data-en="He founded the Canuto Cultural Center: music and dance classes, poetry events, language exchange and a meeting point for the community.">Fundó el Centro Cultural Canuto: clases de música y danza, eventos de poesía, intercambio de idiomas y un punto de encuentro para la comunidad.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROYECTOS ============ -->
+<section id="proyectos" class="proyectos section-pad">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker" data-es="Lo que construye" data-en="What he builds">Lo que construye</span>
+      <h2 class="sec-title" data-es="Proyectos" data-en="Projects">Proyectos</h2>
+    </div>
+    <div class="proj-grid">
+
+      <a class="proj reveal" href="projects/centro-cultural-canuto.html" style="--accent:var(--petrol)">
+        <div class="proj__top">
+          <span class="proj__abbr" style="font-size:1.2rem;letter-spacing:.02em">CCC</span>
+          <span class="tag" data-es="Espacio cultural" data-en="Cultural space">Espacio cultural</span>
+        </div>
+        <h3 data-es="Centro Cultural Canuto" data-en="Canuto Cultural Center">Centro Cultural Canuto</h3>
+        <p data-es="Una casa viva en Venezuela: música, danza, poesía e intercambio de idiomas para la comunidad." data-en="A living house in Venezuela: music, dance, poetry and language exchange for the community.">Una casa viva en Venezuela: música, danza, poesía e intercambio de idiomas para la comunidad.</p>
+        <span class="proj__go" data-es="Conocer el CCC →" data-en="Discover CCC →">Conocer el CCC →</span>
+      </a>
+
+      <a class="proj reveal" href="projects/el-cello-como-puente.html" style="--accent:var(--clay)">
+        <div class="proj__top">
+          <span class="proj__abbr">↔</span>
+          <span class="tag" data-es="Gira · Encuentro" data-en="Tour · Encounter">Gira · Encuentro</span>
+        </div>
+        <h3 data-es="El Cello como un Puente" data-en="The Cello as a Bridge">El Cello como un Puente</h3>
+        <p data-es="Viaja conectando historias a través de la música: cada lugar, una conversación; cada concierto, un puente." data-en="He travels connecting stories through music: each place a conversation, each concert a bridge.">Viaja conectando historias a través de la música: cada lugar, una conversación; cada concierto, un puente.</p>
+        <span class="proj__go" data-es="Seguir el puente →" data-en="Follow the bridge →">Seguir el puente →</span>
+      </a>
+
+      <a class="proj reveal" href="projects/la-vida-suena.html" style="--accent:var(--wine)">
+        <div class="proj__top">
+          <span class="proj__abbr">♪</span>
+          <span class="tag" data-es="ONG · Movimiento" data-en="NGO · Movement">ONG · Movimiento</span>
+        </div>
+        <h3 data-es="La Vida Suena" data-en="Life Sounds">La Vida Suena</h3>
+        <p data-es="ONG y movimiento cultural fundado en 2010. Funde música clásica, lo alternativo y el folclore con el cello al frente." data-en="An NGO and cultural movement founded in 2010. It fuses classical, alternative and folk music with the cello at the front.">ONG y movimiento cultural fundado en 2010. Funde música clásica, lo alternativo y el folclore con el cello al frente.</p>
+        <span class="proj__go" data-es="Entrar al movimiento →" data-en="Join the movement →">Entrar al movimiento →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BIO ============ -->
+<section id="bio" class="bio section-pad">
+  <div class="wrap bio__in">
+    <div class="bio__media reveal">
+      <image-slot id="bio-1" src="assets/percucello.jpg" style="width:100%;aspect-ratio:4/5;" shape="rounded" radius="18"
+        placeholder="Arrastra una foto (retrato / en escena)"></image-slot>
+      <image-slot id="bio-2" class="bio__media-2" style="width:62%;aspect-ratio:1/1;" shape="rounded" radius="16"
+        placeholder="Arrastra otra foto"></image-slot>
+    </div>
+    <div class="bio__text reveal">
+      <span class="kicker" data-es="Biografía" data-en="Biography">Biografía</span>
+      <h2 class="sec-title" data-es="Del llano al escenario" data-en="From the plains to the stage">Del llano al escenario</h2>
+      <p data-es="Jesús «Percucello» Vásquez es músico, director orquestal y chelista venezolano. Tomó el violonchelo —un instrumento de tradición europea— y lo volvió voz del joropo y de la música popular de su tierra, creando un lenguaje propio que reconoce el público dentro y fuera de Venezuela." data-en="Jesús “Percucello” Vásquez is a Venezuelan musician, orchestra conductor and cellist. He took the cello —an instrument of European tradition— and turned it into a voice for joropo and the popular music of his land, creating a language of his own that audiences recognize inside and outside Venezuela.">Jesús «Percucello» Vásquez es músico, director orquestal y chelista venezolano. Tomó el violonchelo —un instrumento de tradición europea— y lo volvió voz del joropo y de la música popular de su tierra, creando un lenguaje propio que reconoce el público dentro y fuera de Venezuela.</p>
+      <p data-es="Formado en la UCLA de Barquisimeto, fundó la Orquesta Experimental de Rock y, en 2010, el movimiento La Vida Suena. Desde el Centro Cultural Canuto sostiene un espacio donde la música, la danza y la palabra se encuentran con la comunidad." data-en="Trained at UCLA Barquisimeto, he founded the Experimental Rock Orchestra and, in 2010, the La Vida Suena movement. From the Canuto Cultural Center he sustains a space where music, dance and the spoken word meet the community.">Formado en la UCLA de Barquisimeto, fundó la Orquesta Experimental de Rock y, en 2010, el movimiento La Vida Suena. Desde el Centro Cultural Canuto sostiene un espacio donde la música, la danza y la palabra se encuentran con la comunidad.</p>
+      <div class="bio__stats">
+        <div><strong>2010</strong><span data-es="La Vida Suena" data-en="La Vida Suena">La Vida Suena</span></div>
+        <div><strong>3</strong><span data-es="continentes en gira" data-en="continents on tour">continentes en gira</span></div>
+        <div><strong>1</strong><span data-es="cello, mil historias" data-en="cello, a thousand stories">cello, mil historias</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section id="video" class="video section-pad">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker" data-es="En movimiento" data-en="In motion">En movimiento</span>
+      <h2 class="sec-title sec-title--light" data-es="El Cello como un Puente, en video" data-en="The Cello as a Bridge, on video">El Cello como un Puente, en video</h2>
+    </div>
+    <div class="video__frame reveal">
+      <!-- Video destacado de YouTube -->
+      <iframe src="https://www.youtube-nocookie.com/embed/nMGXHVSWs1Y"
+        title="Percucello en YouTube" loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <p class="video__note muted center reveal" data-es="¿Quieres destacar otro video? Cámbialo en cualquier momento." data-en="Want to feature another video? Swap it anytime.">¿Quieres destacar otro video? Cámbialo en cualquier momento.</p>
+  </div>
+</section>
+
+<!-- ============ AGENDA ============ -->
+<section id="agenda" class="section-pad">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker" data-es="Próximas fechas" data-en="Upcoming dates">Próximas fechas</span>
+      <h2 class="sec-title" data-es="Agenda" data-en="Dates">Agenda</h2>
+    </div>
+    <ul class="agenda reveal">
+      <li class="agenda__row">
+        <span class="agenda__date"><b>15</b> Jul</span>
+        <span class="agenda__city">Madrid, ES</span>
+        <span class="agenda__venue" data-es="La Vida Suena · Concierto europeo" data-en="La Vida Suena · European concert">La Vida Suena · Concierto europeo</span>
+        <a class="agenda__btn" href="#contacto" data-es="Info" data-en="Info">Info</a>
+      </li>
+      <li class="agenda__row">
+        <span class="agenda__date"><b>22</b> Jul</span>
+        <span class="agenda__city">Zaragoza, ES</span>
+        <span class="agenda__venue" data-es="El Cello como un Puente · Recital" data-en="The Cello as a Bridge · Recital">El Cello como un Puente · Recital</span>
+        <a class="agenda__btn" href="#contacto" data-es="Info" data-en="Info">Info</a>
+      </li>
+      <li class="agenda__row">
+        <span class="agenda__date"><b>29</b> Jul</span>
+        <span class="agenda__city">Porto, PT</span>
+        <span class="agenda__venue" data-es="Percucello · Cello & joropo en gira" data-en="Percucello · Cello & joropo on tour">Percucello · Cello & joropo en gira</span>
+        <a class="agenda__btn" href="#contacto" data-es="Info" data-en="Info">Info</a>
+      </li>
+    </ul>
+    <p class="muted center reveal" style="margin-top:1.2rem" data-es="Fechas de ejemplo — edítalas con tus conciertos reales." data-en="Sample dates — edit them with your real concerts.">Fechas de ejemplo — edítalas con tus conciertos reales.</p>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section id="booking" class="booking section-pad">
+  <div class="wrap booking__in">
+    <div class="booking__text reveal">
+      <span class="kicker" data-es="Contratación" data-en="Booking">Contratación</span>
+      <h2 class="sec-title sec-title--light" data-es="Lleva a Percucello a tu escenario" data-en="Bring Percucello to your stage">Lleva a Percucello a tu escenario</h2>
+      <p data-es="Recitales, dirección orquestal y coral, talleres y residencias artísticas. Disponible para giras, festivales e instituciones en Latinoamérica y Europa." data-en="Recitals, orchestral and choral conducting, workshops and artistic residencies. Available for tours, festivals and institutions across Latin America and Europe.">Recitales, dirección orquestal y coral, talleres y residencias artísticas. Disponible para giras, festivales e instituciones en Latinoamérica y Europa.</p>
+      <div class="hero__cta">
+        <a href="#contacto" class="btn btn--clay" data-es="Solicitar disponibilidad" data-en="Request availability">Solicitar disponibilidad</a>
+        <a href="mailto:percucello@gmail.com?subject=Solicitud%20de%20hoja%20de%20servicios" class="btn btn--ghost" data-es="Pedir hoja de servicios" data-en="Request service sheet">Pedir hoja de servicios</a>
+      </div>
+    </div>
+    <ul class="services reveal">
+      <li><b data-es="Recital solista" data-en="Solo recital">Recital solista</b><span data-es="Cello & loops · joropo y música popular" data-en="Cello & loops · joropo and popular music">Cello & loops · joropo y música popular</span></li>
+      <li><b data-es="Dirección" data-en="Conducting">Dirección</b><span data-es="Orquestal y coral · montajes a medida" data-en="Orchestral & choral · custom programs">Orquestal y coral · montajes a medida</span></li>
+      <li><b data-es="Talleres & clínicas" data-en="Workshops & clinics">Talleres & clínicas</b><span data-es="Técnica, improvisación y folclor" data-en="Technique, improvisation and folklore">Técnica, improvisación y folclor</span></li>
+      <li><b data-es="Residencias" data-en="Residencies">Residencias</b><span data-es="Creación e intercambio cultural" data-en="Creation and cultural exchange">Creación e intercambio cultural</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ APOYO / TIENDA ============ -->
+<section id="apoyo" class="support section-pad">
+  <div class="wrap support__in">
+    <div class="support__card reveal" style="--accent:var(--amber)">
+      <h3 data-es="Apoya el movimiento" data-en="Support the movement">Apoya el movimiento</h3>
+      <p data-es="Tu aporte sostiene las clases, los conciertos y los programas comunitarios de La Vida Suena y el Centro Cultural Canuto." data-en="Your contribution sustains the classes, concerts and community programs of La Vida Suena and the Canuto Cultural Center.">Tu aporte sostiene las clases, los conciertos y los programas comunitarios de La Vida Suena y el Centro Cultural Canuto.</p>
+      <a href="mailto:percucello@gmail.com?subject=Quiero%20donar%20a%20La%20Vida%20Suena" class="btn btn--petrol" data-es="Donar" data-en="Donate">Donar</a>
+    </div>
+    <div class="support__card reveal" style="--accent:var(--clay)">
+      <h3 data-es="Tienda" data-en="Shop">Tienda</h3>
+      <p data-es="Música, merch y ediciones especiales de Percucello. Muy pronto disponible en línea." data-en="Music, merch and special editions by Percucello. Coming soon online.">Música, merch y ediciones especiales de Percucello. Muy pronto disponible en línea.</p>
+      <a href="mailto:percucello@gmail.com?subject=Tienda%20Percucello" class="btn btn--ghost" data-es="Avísame" data-en="Notify me">Avísame</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section id="contacto" class="contact section-pad">
+  <div class="wrap contact__in">
+    <div class="contact__left reveal">
+      <span class="kicker" data-es="Hablemos" data-en="Let's talk">Hablemos</span>
+      <h2 class="sec-title sec-title--light" data-es="Contacto" data-en="Contact">Contacto</h2>
+      <p data-es="Conciertos, colaboraciones, prensa o simplemente para saludar. Escríbeme y te respondo personalmente." data-en="Concerts, collaborations, press or just to say hello. Write to me and I'll reply personally.">Conciertos, colaboraciones, prensa o simplemente para saludar. Escríbeme y te respondo personalmente.</p>
+      <ul class="contact__links">
+        <li><a href="mailto:percucello@gmail.com">percucello@gmail.com</a></li>
+        <li><a href="https://instagram.com/percucello" target="_blank" rel="noopener">Instagram · @percucello</a></li>
+        <li><a href="https://instagram.com/percuchelo" target="_blank" rel="noopener">Instagram · @percuchelo</a></li>
+        <li><a href="https://youtube.com/@percucello" target="_blank" rel="noopener">YouTube · Percucello</a></li>
+      </ul>
+    </div>
+    <form class="contact__form reveal" id="contactForm" action="https://formspree.io/f/REEMPLAZA_ID" method="POST">
+      <label>
+        <span data-es="Nombre" data-en="Name">Nombre</span>
+        <input type="text" name="nombre" required data-attr data-es="Tu nombre" data-en="Your name" placeholder="Tu nombre" />
+      </label>
+      <label>
+        <span data-es="Correo" data-en="Email">Correo</span>
+        <input type="email" name="email" required data-attr data-es="tucorreo@ejemplo.com" data-en="you@example.com" placeholder="tucorreo@ejemplo.com" />
+      </label>
+      <label>
+        <span data-es="Asunto" data-en="Subject">Asunto</span>
+        <input type="text" name="asunto" data-attr data-es="Concierto, colaboración…" data-en="Concert, collaboration…" placeholder="Concierto, colaboración…" />
+      </label>
+      <label>
+        <span data-es="Mensaje" data-en="Message">Mensaje</span>
+        <textarea name="mensaje" rows="5" required data-attr data-es="Cuéntame en qué piensas…" data-en="Tell me what you have in mind…" placeholder="Cuéntame en qué piensas…"></textarea>
+      </label>
+      <input type="hidden" name="_subject" value="Nuevo mensaje desde percucello (web)" />
+      <button type="submit" class="btn btn--clay" data-es="Enviar mensaje" data-en="Send message">Enviar mensaje</button>
+      <p class="form-status" id="formStatus" hidden></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div>
+      <a class="brand" href="index.html"><span class="dot"></span>Percucello</a>
+      <p class="muted" style="margin:.6rem 0 0" data-es="Jesús Vásquez · Cellista, director y gestor cultural." data-en="Jesús Vásquez · Cellist, conductor and cultural manager.">Jesús Vásquez · Cellista, director y gestor cultural.</p>
+    </div>
+    <div class="foot__cols">
+      <a href="projects/centro-cultural-canuto.html">Centro Cultural Canuto</a>
+      <a href="projects/el-cello-como-puente.html">El Cello como un Puente</a>
+      <a href="projects/la-vida-suena.html">La Vida Suena</a>
+    </div>
+    <div class="foot__social">
+      <a href="https://instagram.com/percucello" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://youtube.com/@percucello" target="_blank" rel="noopener">YouTube</a>
+      <a href="mailto:percucello@gmail.com">Email</a>
+    </div>
+  </div>
+  <p class="foot__copy">© <span id="year"></span> Percucello · Barquisimeto, Venezuela</p>
+</footer>
+
+<script src="image-slot.js"></script>
+<script src="site.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // Formulario: usa Formspree si está configurado; si no, abre el correo.
+  (function(){
+    var f = document.getElementById('contactForm');
+    var status = document.getElementById('formStatus');
+    var lang = function(){ return document.documentElement.getAttribute('lang') || 'es'; };
+    f.addEventListener('submit', function(e){
+      var notConfigured = f.action.indexOf('REEMPLAZA_ID') !== -1;
+      if(notConfigured){
+        e.preventDefault();
+        var d = new FormData(f);
+        var body = encodeURIComponent(
+          (d.get('nombre')||'') + ' <' + (d.get('email')||'') + '>\n\n' + (d.get('mensaje')||'')
+        );
+        var subj = encodeURIComponent(d.get('asunto') || 'Mensaje desde la web de Percucello');
+        window.location.href = 'mailto:percucello@gmail.com?subject=' + subj + '&body=' + body;
+        return;
+      }
+      e.preventDefault();
+      fetch(f.action, { method:'POST', body: new FormData(f), headers:{ 'Accept':'application/json' } })
+        .then(function(r){
+          status.hidden = false;
+          if(r.ok){
+            status.textContent = lang()==='en' ? 'Thank you! Message sent.' : '¡Gracias! Mensaje enviado.';
+            status.className = 'form-status ok'; f.reset();
+          } else {
+            status.textContent = lang()==='en' ? 'Something went wrong. Try email.' : 'Algo falló. Prueba por correo.';
+            status.className = 'form-status err';
+          }
+        })
+        .catch(function(){
+          status.hidden = false;
+          status.textContent = lang()==='en' ? 'Network error. Try email.' : 'Error de red. Prueba por correo.';
+          status.className = 'form-status err';
+        });
+    });
+  })();
+</script>
 </body>
 </html>
