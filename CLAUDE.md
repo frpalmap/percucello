@@ -6,7 +6,7 @@ Guidance for Claude Code when working on this repository.
 
 Static website for Jesús «Percucello» Vásquez — cellist, music director and cultural manager. No framework, no build step, no backend.
 
-Live at **www.percucello.com** via GitHub Pages (branch `QAPercucello`).
+Live at **www.percucello.com** via GitHub Pages (branch `main`).
 
 ## Stack
 
@@ -37,11 +37,11 @@ Live at **www.percucello.com** via GitHub Pages (branch `QAPercucello`).
 
 | Branch | Purpose |
 |---|---|
-| `QAPercucello` | Production — serves www.percucello.com |
+| `main` | Production — serves www.percucello.com via GitHub Pages |
+| `QAPercucello` | Working branch — merge to `main` to publicar |
 | `design/updates` | Receives pushes from Claude Design |
-| `main` | Base / history |
 
-**Never push directly to `QAPercucello` from Claude Design.** Always push to `design/updates` and merge from here after review.
+**Para publicar:** merge `QAPercucello` → `main` → push `main`.
 
 ## Design system
 
@@ -81,5 +81,7 @@ Push to `QAPercucello` triggers GitHub Pages rebuild automatically. No build ste
 ```bash
 git checkout QAPercucello
 git merge design/updates
-git push origin QAPercucello
+git checkout main
+git merge QAPercucello
+git push origin main
 ```
