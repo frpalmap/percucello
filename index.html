@@ -492,23 +492,11 @@
 <script src="site.js"></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-  // Formulario: usa Formspree si está configurado; si no, abre el correo.
   (function(){
     var f = document.getElementById('contactForm');
     var status = document.getElementById('formStatus');
     var lang = function(){ return document.documentElement.getAttribute('lang') || 'es'; };
     f.addEventListener('submit', function(e){
-      var notConfigured = f.action.indexOf('mljezpqq') !== -1;
-      if(notConfigured){
-        e.preventDefault();
-        var d = new FormData(f);
-        var body = encodeURIComponent(
-          (d.get('nombre')||'') + ' <' + (d.get('email')||'') + '>\n\n' + (d.get('mensaje')||'')
-        );
-        var subj = encodeURIComponent(d.get('asunto') || 'Mensaje desde la web de Percucello');
-        window.location.href = 'mailto:percucello@gmail.com?subject=' + subj + '&body=' + body;
-        return;
-      }
       e.preventDefault();
       fetch(f.action, { method:'POST', body: new FormData(f), headers:{ 'Accept':'application/json' } })
         .then(function(r){
